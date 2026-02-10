@@ -1,0 +1,348 @@
+/* Hero */
+.hero {
+  background: linear-gradient(to bottom, var(--color-bg-muted), var(--color-surface));
+  padding: 3rem 1.5rem 3.5rem;
+}
+
+.heroInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heroIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-petnames);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(45, 186, 166, 0.25);
+}
+
+.heroIcon svg {
+  width: 44px;
+  height: 44px;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+  max-width: 700px;
+}
+
+.heroText {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 580px;
+}
+
+/* Features */
+.features {
+  background-color: var(--color-surface);
+  padding: 3rem 1.5rem 4rem;
+}
+
+.featuresGrid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.featureCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(45, 186, 166, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.featureIcon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-petnames);
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.featureText {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+/* Categories Section */
+.categories {
+  background-color: var(--color-bg-muted);
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.categoriesInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.categoriesTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.categoryTag {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.categoryTag:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.categoryLabel {
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-petnames);
+}
+
+/* Made for pet lovers */
+.showcase {
+  background-color: var(--color-surface);
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.showcaseInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.showcaseTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.showcaseCard {
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.showcaseIcon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(45, 186, 166, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcaseIcon svg {
+  width: 56px;
+  height: 56px;
+  color: var(--color-petnames);
+}
+
+.showcaseText {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 560px;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(to bottom, var(--color-surface), var(--color-bg-muted));
+  padding: 3.5rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-petnames);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  min-height: 48px;
+}
+
+.ctaPrimary:hover {
+  opacity: 0.9;
+}
+
+.ctaPrimary svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-surface);
+  color: var(--color-petnames);
+  border: 2px solid var(--color-petnames);
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  min-height: 48px;
+}
+
+.ctaSecondary:hover {
+  background-color: var(--color-bg-muted);
+}
+
+.ctaSecondary svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .hero {
+    padding: 4rem 2rem 4.5rem;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroText {
+    font-size: 1.2rem;
+  }
+
+  .heroIcon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .heroIcon svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .features {
+    padding: 4rem 2rem 5rem;
+  }
+
+  .categories,
+  .showcase,
+  .cta {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .categoriesTitle,
+  .showcaseTitle,
+  .ctaTitle {
+    font-size: 2.75rem;
+  }
+
+  .categoriesGrid {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,89 @@
+.page {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.pageText {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--color-border);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  transition: color 0.15s ease;
+}
+
+.backLink:hover {
+  color: var(--color-text);
+}
+
+.divider {
+  margin: 2.5rem 0;
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
+.contactEmail {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 2rem 1.25rem;
+  }
+}

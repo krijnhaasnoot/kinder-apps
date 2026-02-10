@@ -1,0 +1,413 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, var(--color-bg-muted), var(--color-surface));
+  padding: 4rem 1.5rem 3.5rem;
+}
+
+.heroInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.heroText {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Apps Grid Section */
+.appsSection {
+  background-color: var(--color-surface);
+  padding: 3rem 1.5rem 4rem;
+}
+
+.grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card */
+.card {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.cardInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.cardSubtitle {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.cardText {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+/* Card Icons */
+.cardIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.iconKinder {
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--color-kinder) 0%, var(--color-kinder-light) 100%);
+}
+
+.iconBirthflow {
+  background-color: var(--color-birthflow);
+}
+
+.iconMoment {
+  background-color: var(--color-moment);
+}
+
+.iconPetnames {
+  background-color: var(--color-petnames);
+}
+
+/* Card Link */
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: gap 0.2s ease;
+}
+
+.card:hover .cardLink {
+  gap: 0.7rem;
+}
+
+.cardLink svg {
+  width: 16px;
+  height: 16px;
+}
+
+.linkKinder {
+  color: var(--color-kinder);
+}
+
+.linkBirthflow {
+  color: var(--color-birthflow);
+}
+
+.linkMoment {
+  color: var(--color-moment);
+}
+
+.linkPetnames {
+  color: var(--color-petnames);
+}
+
+/* Philosophy Section */
+.philosophy {
+  background-color: var(--color-bg-muted);
+  padding: 4rem 1.5rem;
+}
+
+.philosophyInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophyTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.philosophyText {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pillarWord {
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pillarDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+}
+
+.pillarKinder {
+  color: var(--color-kinder);
+}
+
+.pillarBirthflow {
+  color: var(--color-birthflow);
+}
+
+.pillarMoment {
+  color: var(--color-moment);
+}
+
+/* Family Showcase Section */
+.family {
+  background-color: var(--color-surface);
+  padding: 4rem 1.5rem;
+}
+
+.familyInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.familyTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+}
+
+.familyIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.familyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.familyIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.familyIcon:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+}
+
+.familyIcon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.familyIconKinder {
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--color-kinder) 0%, var(--color-kinder-light) 100%);
+}
+
+.familyIconBirthflow {
+  background-color: var(--color-birthflow);
+}
+
+.familyIconMoment {
+  background-color: var(--color-moment);
+}
+
+.familyIconPetnames {
+  background-color: var(--color-petnames);
+}
+
+.familyLabel {
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+  background-color: var(--color-bg-muted);
+  padding: 4rem 1.5rem;
+}
+
+.contactInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.contactText {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.whatsappButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  min-height: 48px;
+  box-shadow: 0 2px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappButton:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  color: white;
+}
+
+.whatsappButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .heroText {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 5rem 2rem 4rem;
+  }
+
+  .appsSection {
+    padding: 3.5rem 2rem 5rem;
+  }
+
+  .philosophy {
+    padding: 5rem 2rem;
+  }
+
+  .family,
+  .contact {
+    padding: 5rem 2rem;
+  }
+
+  .familyIcon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .familyIcon svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+
+  .philosophyTitle,
+  .familyTitle {
+    font-size: 2.75rem;
+  }
+
+  .cardTitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .familyIcons {
+    gap: 1.5rem;
+  }
+}
