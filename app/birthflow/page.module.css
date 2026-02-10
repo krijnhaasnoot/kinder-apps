@@ -75,7 +75,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: rgba(74, 144, 226, 0.1);
+  background-color: rgba(255, 107, 122, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +135,7 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: rgba(74, 144, 226, 0.1);
+  background-color: rgba(255, 107, 122, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +304,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 2rem;
-  background-color: var(--color-birthflow);
+  background: linear-gradient(135deg, var(--color-birthflow) 0%, var(--color-birthflow-light) 100%);
   color: white;
   border: none;
   border-radius: 8px;

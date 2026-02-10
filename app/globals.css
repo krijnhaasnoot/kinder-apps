@@ -16,10 +16,11 @@
   --font-mono: var(--font-geist-mono), "SF Mono", "Fira Code", monospace;
 
   /* App brand colors */
-  --color-kinder: #FF6B7A;
-  --color-kinder-light: #FF8FA3;
+  --color-kinder: #4A90E2;
+  --color-kinder-light: #6AABE8;
   --color-moment: #7B9E87;
-  --color-birthflow: #4A90E2;
+  --color-birthflow: #FF6B7A;
+  --color-birthflow-light: #FF8FA3;
   --color-petnames: #2DBAA6;
 }
 
