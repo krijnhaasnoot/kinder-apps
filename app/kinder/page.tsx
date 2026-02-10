@@ -38,7 +38,7 @@ export default function KinderPage() {
         <div className={styles.featuresGrid}>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Heart fill="currentColor" />
+              <Heart fill="currentColor" aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Swipe together</h3>
             <p className={styles.featureText}>
@@ -49,7 +49,7 @@ export default function KinderPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Users />
+              <Users aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>
               First &amp; last names
@@ -62,7 +62,7 @@ export default function KinderPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Sparkles />
+              <Sparkles aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Meaningful origins</h3>
             <p className={styles.featureText}>
@@ -114,21 +114,21 @@ export default function KinderPage() {
           <div className={styles.privacyCard}>
             <ul className={styles.privacyList}>
               <li className={styles.privacyItem}>
-                <Heart fill="currentColor" />
+                <Heart fill="currentColor" aria-hidden="true" />
                 <p>
                   <strong>Private by default:</strong> Your name preferences are
                   only shared with your partner.
                 </p>
               </li>
               <li className={styles.privacyItem}>
-                <Heart fill="currentColor" />
+                <Heart fill="currentColor" aria-hidden="true" />
                 <p>
                   <strong>No pressure:</strong> Take your time exploring names at
                   your own pace.
                 </p>
               </li>
               <li className={styles.privacyItem}>
-                <Heart fill="currentColor" />
+                <Heart fill="currentColor" aria-hidden="true" />
                 <p>
                   <strong>No selling data:</strong> We do not sell personal data.
                 </p>
@@ -146,14 +146,14 @@ export default function KinderPage() {
             Download Kinder and find the perfect name for your little one.
           </p>
           <div className={styles.ctaButtons}>
-            <button className={styles.ctaPrimary}>
-              <Download />
+            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+              <Download aria-hidden="true" />
               Download on iOS
-            </button>
-            <button className={styles.ctaSecondary}>
-              <Download />
+            </a>
+            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              <Download aria-hidden="true" />
               Download on Android
-            </button>
+            </a>
           </div>
         </div>
       </section>

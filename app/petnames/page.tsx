@@ -26,7 +26,7 @@ export default function PetnamesPage() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroIcon}>
-            <PawPrint color="white" fill="white" />
+            <PawPrint color="white" fill="white" aria-hidden="true" />
           </div>
           <h1 className={styles.heroTitle}>
             The perfect name for your pet.
@@ -43,7 +43,7 @@ export default function PetnamesPage() {
         <div className={styles.featuresGrid}>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <PawPrint fill="currentColor" />
+              <PawPrint fill="currentColor" aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Multiple pets</h3>
             <p className={styles.featureText}>
@@ -54,7 +54,7 @@ export default function PetnamesPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Heart fill="currentColor" />
+              <Heart fill="currentColor" aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Save favorites</h3>
             <p className={styles.featureText}>
@@ -64,7 +64,7 @@ export default function PetnamesPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Sparkles />
+              <Sparkles aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>
               Creative &amp; classic
@@ -99,7 +99,7 @@ export default function PetnamesPage() {
           <h2 className={styles.showcaseTitle}>Made for pet lovers</h2>
           <div className={styles.showcaseCard}>
             <div className={styles.showcaseIcon}>
-              <PawPrint fill="currentColor" />
+              <PawPrint fill="currentColor" aria-hidden="true" />
             </div>
             <p className={styles.showcaseText}>
               Petnames makes finding the perfect name fun and stress-free. No
@@ -118,14 +118,14 @@ export default function PetnamesPage() {
             Start swiping and find the perfect name for your furry friend.
           </p>
           <div className={styles.ctaButtons}>
-            <button className={styles.ctaPrimary}>
-              <Download />
+            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+              <Download aria-hidden="true" />
               Download on iOS
-            </button>
-            <button className={styles.ctaSecondary}>
-              <Download />
+            </a>
+            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              <Download aria-hidden="true" />
               Download on Android
-            </button>
+            </a>
           </div>
         </div>
       </section>

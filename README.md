@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kinder Apps
+
+Landing pages and privacy policies for the Kinder app family: **Kinder**, **Moment**, **Birthflow**, and **Petnames**.
+
+## Apps
+
+| App | Description |
+|---|---|
+| **Kinder** | Baby name swiping for couples |
+| **Moment** | Calm fertility & cycle tracking |
+| **Birthflow** | Contraction timer for labor |
+| **Petnames** | Pet name swiping |
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) with App Router
+- TypeScript
+- CSS Modules
+- [Poppins](https://fonts.google.com/specimen/Poppins) (headings) + [Geist](https://vercel.com/font) (body)
+- [lucide-react](https://lucide.dev/) icons
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  page.tsx              # Homepage
+  layout.tsx            # Root layout (nav, footer, SEO)
+  sitemap.ts            # Auto-generated sitemap
+  not-found.tsx         # Custom 404
+  globals.css           # Global styles & CSS variables
+  components/
+    Nav.tsx             # Sticky pill navigation
+  kinder/
+    page.tsx            # Kinder app page
+    privacy/page.tsx    # Kinder privacy policy
+  moment/
+    page.tsx            # Moment app page
+    privacy/page.tsx    # Moment privacy policy
+  birthflow/
+    page.tsx            # Birthflow app page
+    privacy/page.tsx    # Birthflow privacy policy
+  petnames/
+    page.tsx            # Petnames app page
+    privacy/page.tsx    # Petnames privacy policy
+  privacy/
+    page.tsx            # General privacy policy
+public/
+  images/               # App icons
+  robots.txt
+```
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+Deploy on [Vercel](https://vercel.com):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npx vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Or push to GitHub and connect the repo to Vercel for automatic deployments.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+krijn.kinderapp@gmail.com

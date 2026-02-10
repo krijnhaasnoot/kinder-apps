@@ -16,7 +16,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} aria-label="Main navigation">
       <div className={styles.navInner}>
         {links.map((link) => {
           const isActive =
@@ -29,6 +29,7 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               className={`${styles.pill} ${isActive ? styles.pillActive : styles.pillInactive}`}
+              aria-current={isActive ? "page" : undefined}
             >
               {link.label}
             </Link>

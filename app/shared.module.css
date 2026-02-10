@@ -82,7 +82,7 @@
   font-size: 0.875rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .page {
     padding: 2rem 1.25rem;
   }

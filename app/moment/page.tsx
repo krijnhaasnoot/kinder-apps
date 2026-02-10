@@ -15,7 +15,7 @@ export default function MomentPage() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroIcon}>
-            <Droplet color="white" fill="white" />
+            <Droplet color="white" fill="white" aria-hidden="true" />
           </div>
           <h1 className={styles.heroTitle}>Timing, without pressure.</h1>
           <p className={styles.heroText}>
@@ -30,7 +30,7 @@ export default function MomentPage() {
         <div className={styles.featuresGrid}>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Droplet fill="currentColor" />
+              <Droplet fill="currentColor" aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Cycle insights</h3>
             <p className={styles.featureText}>
@@ -40,7 +40,7 @@ export default function MomentPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Users />
+              <Users aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Partner sharing</h3>
             <p className={styles.featureText}>
@@ -51,7 +51,7 @@ export default function MomentPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Shield />
+              <Shield aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Privacy-first</h3>
             <p className={styles.featureText}>
@@ -85,20 +85,20 @@ export default function MomentPage() {
           <div className={styles.privacyCard}>
             <ul className={styles.privacyList}>
               <li className={styles.privacyItem}>
-                <Shield />
+                <Shield aria-hidden="true" />
                 <p>
                   <strong>Not a medical device:</strong> Moment is not a medical
                   device and does not provide medical advice.
                 </p>
               </li>
               <li className={styles.privacyItem}>
-                <Shield />
+                <Shield aria-hidden="true" />
                 <p>
                   <strong>No selling data:</strong> We do not sell personal data.
                 </p>
               </li>
               <li className={styles.privacyItem}>
-                <Shield />
+                <Shield aria-hidden="true" />
                 <p>
                   <strong>Limited analytics:</strong> We may collect limited,
                   non-sensitive usage analytics to improve the app. You can opt
@@ -118,14 +118,14 @@ export default function MomentPage() {
             Download Moment today and start understanding your cycle with care.
           </p>
           <div className={styles.ctaButtons}>
-            <button className={styles.ctaPrimary}>
-              <Download />
+            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+              <Download aria-hidden="true" />
               Download on iOS
-            </button>
-            <button className={styles.ctaSecondary}>
-              <Download />
+            </a>
+            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              <Download aria-hidden="true" />
               Download on Android
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -15,7 +15,7 @@ export default function BirthflowPage() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroIcon}>
-            <Circle color="white" strokeWidth={3} />
+            <Circle color="white" strokeWidth={3} aria-hidden="true" />
           </div>
           <h1 className={styles.heroTitle}>
             A calm contraction timer for labor.
@@ -32,7 +32,7 @@ export default function BirthflowPage() {
         <div className={styles.featuresGrid}>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Circle strokeWidth={3} />
+              <Circle strokeWidth={3} aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>One-tap tracking</h3>
             <p className={styles.featureText}>
@@ -42,7 +42,7 @@ export default function BirthflowPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Clock />
+              <Clock aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Intervals &amp; duration</h3>
             <p className={styles.featureText}>
@@ -52,7 +52,7 @@ export default function BirthflowPage() {
 
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <List />
+              <List aria-hidden="true" />
             </div>
             <h3 className={styles.featureTitle}>Simple history</h3>
             <p className={styles.featureText}>
@@ -68,7 +68,7 @@ export default function BirthflowPage() {
           <h2 className={styles.focusTitle}>Designed for focus</h2>
           <div className={styles.focusCard}>
             <div className={styles.focusIcon}>
-              <Circle strokeWidth={3} />
+              <Circle strokeWidth={3} aria-hidden="true" />
             </div>
             <p className={styles.focusText}>
               Birthflow keeps the interface minimal and clear, so you can focus
@@ -85,21 +85,21 @@ export default function BirthflowPage() {
           <div className={styles.privacyCard}>
             <ul className={styles.privacyList}>
               <li className={styles.privacyItem}>
-                <Shield />
+                <Shield aria-hidden="true" />
                 <p>
                   <strong>Local-first:</strong> Your contraction data is stored
                   locally on your device where possible.
                 </p>
               </li>
               <li className={styles.privacyItem}>
-                <Shield />
+                <Shield aria-hidden="true" />
                 <p>
                   <strong>Not a medical device:</strong> Birthflow is not a
                   medical device and does not provide medical advice.
                 </p>
               </li>
               <li className={styles.privacyItem}>
-                <Shield />
+                <Shield aria-hidden="true" />
                 <p>
                   <strong>No selling data:</strong> We do not sell personal data.
                 </p>
@@ -113,7 +113,7 @@ export default function BirthflowPage() {
       <section className={styles.warChild}>
         <div className={styles.warChildInner}>
           <div className={styles.warChildIcon}>
-            <Heart />
+            <Heart aria-hidden="true" />
           </div>
           <h2 className={styles.warChildTitle}>Supporting War Child</h2>
           <p className={styles.warChildText}>
@@ -139,14 +139,14 @@ export default function BirthflowPage() {
             Track contractions with clarity and calm.
           </p>
           <div className={styles.ctaButtons}>
-            <button className={styles.ctaPrimary}>
-              <Download />
+            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+              <Download aria-hidden="true" />
               Download on iOS
-            </button>
-            <button className={styles.ctaSecondary}>
-              <Download />
+            </a>
+            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              <Download aria-hidden="true" />
               Download on Android
-            </button>
+            </a>
           </div>
         </div>
       </section>
