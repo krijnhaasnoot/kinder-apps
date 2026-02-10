@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Heart, Users, Sparkles, Download } from "lucide-react";
 import styles from "./page.module.css";
 
@@ -8,30 +9,20 @@ export const metadata: Metadata = {
     "Kinder helps parents discover baby names together. Swipe, match, and build a shortlist you both love.",
 };
 
-function StorkIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M12 21C12 21 4 15 4 9.5C4 6.5 6 4 8.5 4C10 4 11.5 5 12 6.5C12.5 5 14 4 15.5 4C18 4 20 6.5 20 9.5C20 15 12 21 12 21Z"
-        fill="white"
-        stroke="white"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 export default function KinderPage() {
   return (
     <div>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <div className={styles.heroIcon}>
-            <StorkIcon />
-          </div>
+          <Image
+            src="/images/kinder-icon.png"
+            alt="Kinder"
+            width={96}
+            height={96}
+            className={styles.heroAppIcon}
+            priority
+          />
           <h1 className={styles.heroTitle}>
             Find the perfect baby name, together.
           </h1>

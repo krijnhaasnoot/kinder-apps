@@ -1,21 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Circle, PawPrint, Droplet, ArrowRight, MessageCircle } from "lucide-react";
 import styles from "./page.module.css";
-
-function StorkIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M12 21C12 21 4 15 4 9.5C4 6.5 6 4 8.5 4C10 4 11.5 5 12 6.5C12.5 5 14 4 15.5 4C18 4 20 6.5 20 9.5C20 15 12 21 12 21Z"
-        fill="white"
-        stroke="white"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 export default function Home() {
   return (
@@ -37,9 +23,13 @@ export default function Home() {
           {/* Kinder */}
           <Link href="/kinder" className={styles.card}>
             <div className={styles.cardHeader}>
-              <div className={`${styles.cardIcon} ${styles.iconKinder}`}>
-                <StorkIcon />
-              </div>
+              <Image
+                src="/images/kinder-icon.png"
+                alt="Kinder"
+                width={56}
+                height={56}
+                className={styles.appIcon}
+              />
               <div className={styles.cardInfo}>
                 <h2 className={styles.cardTitle}>Kinder</h2>
                 <p className={styles.cardSubtitle}>Baby name swiping</p>
@@ -164,11 +154,13 @@ export default function Home() {
           <h2 className={styles.familyTitle}>The complete family</h2>
           <div className={styles.familyIcons}>
             <div className={styles.familyItem}>
-              <div
-                className={`${styles.familyIcon} ${styles.familyIconKinder}`}
-              >
-                <StorkIcon />
-              </div>
+              <Image
+                src="/images/kinder-icon.png"
+                alt="Kinder"
+                width={96}
+                height={96}
+                className={styles.familyAppIcon}
+              />
               <span className={styles.familyLabel}>Kinder</span>
             </div>
             <div className={styles.familyItem}>
