@@ -298,56 +298,24 @@
   align-items: center;
 }
 
-.ctaPrimary {
+.ctaBadge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 2rem;
-  background-color: var(--color-birthflow);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: opacity 0.15s ease;
-  min-height: 48px;
-}
-
-.ctaPrimary:hover {
-  opacity: 0.9;
-}
-
-.ctaPrimary svg {
-  width: 20px;
-  height: 20px;
-}
-
-.ctaSecondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 2rem;
-  background-color: var(--color-surface);
-  color: var(--color-birthflow);
-  border: 2px solid var(--color-birthflow);
-  border-radius: 8px;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-  min-height: 48px;
-}
-
-.ctaSecondary:hover {
   background-color: var(--color-bg-muted);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  min-height: 48px;
+  cursor: default;
 }
 
-.ctaSecondary svg {
+.ctaBadge svg {
   width: 20px;
   height: 20px;
 }

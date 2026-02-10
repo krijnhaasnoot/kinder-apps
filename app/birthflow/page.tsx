@@ -139,14 +139,14 @@ export default function BirthflowPage() {
             Track contractions with clarity and calm.
           </p>
           <div className={styles.ctaButtons}>
-            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+            <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
-              Download on iOS
-            </a>
-            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              iOS — Coming soon
+            </span>
+            <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
-              Download on Android
-            </a>
+              Android — Coming soon
+            </span>
           </div>
         </div>
       </section>

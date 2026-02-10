@@ -118,14 +118,14 @@ export default function MomentPage() {
             Download Moment today and start understanding your cycle with care.
           </p>
           <div className={styles.ctaButtons}>
-            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+            <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
-              Download on iOS
-            </a>
-            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              iOS — Coming soon
+            </span>
+            <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
-              Download on Android
-            </a>
+              Android — Coming soon
+            </span>
           </div>
         </div>
       </section>

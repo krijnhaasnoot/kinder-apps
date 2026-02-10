@@ -118,14 +118,14 @@ export default function PetnamesPage() {
             Start swiping and find the perfect name for your furry friend.
           </p>
           <div className={styles.ctaButtons}>
-            <a href="#" className={styles.ctaPrimary} aria-label="Download on iOS (coming soon)">
+            <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
-              Download on iOS
-            </a>
-            <a href="#" className={styles.ctaSecondary} aria-label="Download on Android (coming soon)">
+              iOS — Coming soon
+            </span>
+            <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
-              Download on Android
-            </a>
+              Android — Coming soon
+            </span>
           </div>
         </div>
       </section>
