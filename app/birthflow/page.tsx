@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Circle, Clock, List, Shield, Download } from "lucide-react";
+import { Circle, Clock, List, Shield, Download, Heart } from "lucide-react";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -106,6 +106,28 @@ export default function BirthflowPage() {
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* War Child */}
+      <section className={styles.warChild}>
+        <div className={styles.warChildInner}>
+          <div className={styles.warChildIcon}>
+            <Heart />
+          </div>
+          <h2 className={styles.warChildTitle}>Supporting War Child</h2>
+          <p className={styles.warChildText}>
+            Birthflow is made from gratitude for a safe start. All proceeds are
+            donated to War Child, supporting children growing up in conflict.
+          </p>
+          <a
+            href="https://actie.voorwarchild.nl/fundraisers/birthflow"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.warChildLink}
+          >
+            Donate to War Child &rarr;
+          </a>
         </div>
       </section>
 

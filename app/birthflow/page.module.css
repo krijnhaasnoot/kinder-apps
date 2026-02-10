@@ -207,6 +207,64 @@
   margin: 0;
 }
 
+/* War Child Section */
+.warChild {
+  background-color: var(--color-surface);
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.warChildInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.warChildIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(220, 60, 60, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.warChildIcon svg {
+  width: 26px;
+  height: 26px;
+  color: #dc3c3c;
+}
+
+.warChildTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.warChildText {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+}
+
+.warChildLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #dc3c3c;
+  transition: opacity 0.15s ease;
+}
+
+.warChildLink:hover {
+  opacity: 0.8;
+  color: #dc3c3c;
+}
+
 /* CTA Section */
 .cta {
   background-color: var(--color-bg-muted);
@@ -324,6 +382,7 @@
 
   .focus,
   .privacy,
+  .warChild,
   .cta {
     padding: 5rem 2rem;
   }
