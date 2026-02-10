@@ -232,6 +232,60 @@
   align-items: center;
 }
 
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-petnames);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  min-height: 48px;
+  transition: opacity 0.15s ease;
+}
+
+.ctaPrimary:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.ctaPrimary svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-surface);
+  color: var(--color-petnames);
+  border: 2px solid var(--color-petnames);
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  min-height: 48px;
+  transition: background-color 0.15s ease;
+}
+
+.ctaSecondary:hover {
+  background-color: var(--color-bg-muted);
+  color: var(--color-petnames);
+}
+
+.ctaSecondary svg {
+  width: 20px;
+  height: 20px;
+}
+
 .ctaBadge {
   display: inline-flex;
   align-items: center;

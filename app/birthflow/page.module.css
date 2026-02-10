@@ -298,6 +298,33 @@
   align-items: center;
 }
 
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-birthflow);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  min-height: 48px;
+  transition: opacity 0.15s ease;
+}
+
+.ctaPrimary:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.ctaPrimary svg {
+  width: 20px;
+  height: 20px;
+}
+
 .ctaBadge {
   display: inline-flex;
   align-items: center;

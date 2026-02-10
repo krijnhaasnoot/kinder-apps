@@ -118,14 +118,14 @@ export default function PetnamesPage() {
             Start swiping and find the perfect name for your furry friend.
           </p>
           <div className={styles.ctaButtons}>
-            <span className={styles.ctaBadge}>
+            <a href="https://apps.apple.com/nl/app/pet-names-by-kinder/id381336923" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
               <Download aria-hidden="true" />
-              iOS — Coming soon
-            </span>
-            <span className={styles.ctaBadge}>
+              Download on iOS
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=global.kinder.petnames" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>
               <Download aria-hidden="true" />
-              Android — Coming soon
-            </span>
+              Download on Android
+            </a>
           </div>
         </div>
       </section>

@@ -146,14 +146,14 @@ export default function KinderPage() {
             Download Kinder and find the perfect name for your little one.
           </p>
           <div className={styles.ctaButtons}>
-            <span className={styles.ctaBadge}>
+            <a href="https://apps.apple.com/nl/app/kinder-find-baby-names/id1068421785" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
               <Download aria-hidden="true" />
-              iOS — Coming soon
-            </span>
-            <span className={styles.ctaBadge}>
+              Download on iOS
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=global.kinder&hl=nl" target="_blank" rel="noopener noreferrer" className={styles.ctaSecondary}>
               <Download aria-hidden="true" />
-              Android — Coming soon
-            </span>
+              Download on Android
+            </a>
           </div>
         </div>
       </section>

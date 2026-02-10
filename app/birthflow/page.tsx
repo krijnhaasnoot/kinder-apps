@@ -139,10 +139,10 @@ export default function BirthflowPage() {
             Track contractions with clarity and calm.
           </p>
           <div className={styles.ctaButtons}>
-            <span className={styles.ctaBadge}>
+            <a href="https://apps.apple.com/nl/app/birthflow/id6757489394" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
               <Download aria-hidden="true" />
-              iOS — Coming soon
-            </span>
+              Download on iOS
+            </a>
             <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
               Android — Coming soon

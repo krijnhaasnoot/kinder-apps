@@ -60,8 +60,8 @@ export const metadata: Metadata = {
     images: ["/images/kinder-icon.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/images/kinder-icon.png",
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
   },
   robots: {
     index: true,
