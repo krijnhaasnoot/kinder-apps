@@ -1,4 +1,4 @@
-/* Hero */
+/* ── Hero ── */
 .hero {
   background-color: var(--color-bg-muted);
   padding: 3rem 1.5rem 3.5rem;
@@ -37,17 +37,56 @@
   max-width: 700px;
 }
 
+.heroAccent {
+  color: var(--color-moment);
+}
+
 .heroText {
   font-size: 1.1rem;
   color: var(--color-text-secondary);
   line-height: 1.75;
-  max-width: 580px;
+  max-width: 600px;
 }
 
-/* Features */
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.heroBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-moment);
+  background-color: rgba(123, 158, 135, 0.1);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
+/* ── Section Headers (shared) ── */
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.sectionSubtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.75;
+}
+
+/* ── Features Grid ── */
 .features {
   background-color: var(--color-surface);
-  padding: 3rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 4.5rem;
 }
 
 .featuresGrid {
@@ -100,47 +139,221 @@
   line-height: 1.65;
 }
 
-/* LH Section */
-.lh {
+/* ── Daily Tracking ── */
+.tracking {
   background-color: var(--color-bg-muted);
-  padding: 3.5rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 4.5rem;
 }
 
-.lhInner {
+.trackingInner {
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
-.lhTitle {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5rem;
+.trackingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
 }
 
-.lhCard {
+.trackingCard {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
-  padding: 1.75rem 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.trackingCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.trackingEmoji {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.trackingCardTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.trackingCardText {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ── How It Works ── */
+.howItWorks {
+  background-color: var(--color-surface);
+  padding: 4rem 1.5rem 4.5rem;
+}
+
+.howInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.howCard {
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-.lhCard p {
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.step {
+  text-align: center;
+}
+
+.stepNumber {
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-moment);
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.stepTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.stepText {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ── Health Integration ── */
+.health {
+  background-color: var(--color-bg-muted);
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.healthInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.healthContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.healthIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-moment);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.healthTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.healthText {
   font-size: 0.9375rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
-.lhCard p:last-child {
-  margin-bottom: 0;
+.healthNote {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-style: italic;
 }
 
-/* Privacy Section */
-.privacy {
+/* ── Partner Section ── */
+.partner {
   background-color: var(--color-surface);
-  padding: 3.5rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 4.5rem;
+}
+
+.partnerInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.partnerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.partnerCard {
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.partnerIcon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-moment);
+  margin-bottom: 0.75rem;
+}
+
+.partnerCardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.partnerList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.partnerList li {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.partnerList li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+/* ── Privacy Section ── */
+.privacy {
+  background-color: var(--color-bg-muted);
+  padding: 4rem 1.5rem 4.5rem;
 }
 
 .privacyInner {
@@ -148,18 +361,12 @@
   margin: 0 auto;
 }
 
-.privacyTitle {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .privacyCard {
-  background-color: var(--color-bg-muted);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 1.75rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .privacyList {
@@ -167,7 +374,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .privacyItem {
@@ -190,10 +397,27 @@
   margin: 0;
 }
 
-/* CTA Section */
+.privacyLink {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.privacyLink a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-moment);
+  transition: opacity 0.15s ease;
+}
+
+.privacyLink a:hover {
+  opacity: 0.7;
+}
+
+/* ── CTA Section ── */
 .cta {
-  background-color: var(--color-bg-muted);
-  padding: 3.5rem 1.5rem 4rem;
+  background-color: var(--color-surface);
+  padding: 4rem 1.5rem 4.5rem;
   text-align: center;
 }
 
@@ -245,7 +469,7 @@
   height: 20px;
 }
 
-/* Responsive */
+/* ── Responsive ── */
 @media (min-width: 640px) {
   .hero {
     padding: 4rem 2rem 4.5rem;
@@ -269,11 +493,14 @@
     height: 48px;
   }
 
-  .features {
-    padding: 4rem 2rem 5rem;
+  .features,
+  .tracking,
+  .partner {
+    padding: 5rem 2rem;
   }
 
-  .lh,
+  .howItWorks,
+  .health,
   .privacy,
   .cta {
     padding: 5rem 2rem;
@@ -285,15 +512,40 @@
     font-size: 3.5rem;
   }
 
-  .lhTitle,
-  .privacyTitle,
+  .sectionTitle,
   .ctaTitle {
     font-size: 2.75rem;
   }
 }
 
+@media (max-width: 959px) {
+  .trackingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 767px) {
   .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .partnerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .healthContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .trackingGrid {
     grid-template-columns: 1fr;
   }
 }
