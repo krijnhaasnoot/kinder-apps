@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import Nav from "./components/Nav";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import styles from "./layout.module.css";
 
@@ -128,6 +129,7 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );

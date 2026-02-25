@@ -308,10 +308,10 @@ export default function MomentPage() {
             together.
           </p>
           <div className={styles.ctaButtons}>
-            <span className={styles.ctaBadge}>
+            <a href="https://apps.apple.com/nl/app/moment-by-kinder/id6757923786" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
               <Download aria-hidden="true" />
-              iOS — Coming soon
-            </span>
+              Download on iOS
+            </a>
             <span className={styles.ctaBadge}>
               <Download aria-hidden="true" />
               Android — Coming soon
