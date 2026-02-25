@@ -10,6 +10,7 @@ const links = [
   { href: "/moment", label: "Moment" },
   { href: "/birthflow", label: "Birthflow" },
   { href: "/petnames", label: "Petnames" },
+  { href: "/iglo", label: "Iglo" },
 ];
 
 export default function Nav() {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Circle, PawPrint, Droplet, ArrowRight, MessageCircle } from "lucide-react";
+import { Circle, PawPrint, Droplet, Mountain, ArrowRight, MessageCircle } from "lucide-react";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <div className={styles.heroInner}>
           <h1 className={styles.heroTitle}>The Kinder Family</h1>
           <p className={styles.heroText}>
-            Four apps designed with care for life&apos;s most important moments
+            Five apps designed with care for life&apos;s most important moments
             — from choosing names to welcoming new life.
           </p>
         </div>
@@ -105,6 +105,26 @@ export default function Home() {
               Learn more <ArrowRight />
             </span>
           </Link>
+
+          {/* Iglo */}
+          <Link href="/iglo" className={styles.card}>
+            <div className={styles.cardHeader}>
+              <div className={`${styles.cardIcon} ${styles.iconIglo}`}>
+                <Mountain color="white" />
+              </div>
+              <div className={styles.cardInfo}>
+                <h2 className={styles.cardTitle}>Iglo</h2>
+                <p className={styles.cardSubtitle}>Ski group tracker</p>
+              </div>
+            </div>
+            <p className={styles.cardText}>
+              Keep your ski group together on the slopes. Share locations, set
+              meeting points, and track your runs.
+            </p>
+            <span className={`${styles.cardLink} ${styles.linkIglo}`}>
+              Learn more <ArrowRight />
+            </span>
+          </Link>
         </div>
       </section>
 
@@ -186,6 +206,14 @@ export default function Home() {
                 <PawPrint color="white" fill="white" />
               </div>
               <span className={styles.familyLabel}>Petnames</span>
+            </div>
+            <div className={styles.familyItem}>
+              <div
+                className={`${styles.familyIcon} ${styles.familyIconIglo}`}
+              >
+                <Mountain color="white" />
+              </div>
+              <span className={styles.familyLabel}>Iglo</span>
             </div>
           </div>
         </div>

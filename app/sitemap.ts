@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/moment`, lastModified: new Date(), priority: 0.9 },
     { url: `${BASE_URL}/birthflow`, lastModified: new Date(), priority: 0.9 },
     { url: `${BASE_URL}/petnames`, lastModified: new Date(), priority: 0.9 },
+    { url: `${BASE_URL}/iglo`, lastModified: new Date(), priority: 0.9 },
     { url: `${BASE_URL}/privacy`, lastModified: new Date(), priority: 0.5 },
     { url: `${BASE_URL}/kinder/privacy`, lastModified: new Date(), priority: 0.3 },
     { url: `${BASE_URL}/moment/privacy`, lastModified: new Date(), priority: 0.3 },
