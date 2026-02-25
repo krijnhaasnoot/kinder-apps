@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Mountain, Users, MapPin, Shield, Download, Snowflake } from "lucide-react";
+import Image from "next/image";
+import { Users, MapPin, Shield, Download, Snowflake } from "lucide-react";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -14,9 +15,13 @@ export default function IgloPage() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <div className={styles.heroIcon}>
-            <Mountain color="white" aria-hidden="true" />
-          </div>
+          <Image
+            src="/images/iglo-icon.png"
+            alt="Iglo"
+            width={80}
+            height={80}
+            className={styles.heroAppIcon}
+          />
           <h1 className={styles.heroTitle}>
             Stay connected on the slopes.
           </h1>

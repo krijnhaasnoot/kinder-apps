@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Circle, PawPrint, Droplet, Mountain, ArrowRight, MessageCircle } from "lucide-react";
+import { Circle, PawPrint, Droplet, ArrowRight, MessageCircle } from "lucide-react";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -109,9 +109,13 @@ export default function Home() {
           {/* Iglo */}
           <Link href="/iglo" className={styles.card}>
             <div className={styles.cardHeader}>
-              <div className={`${styles.cardIcon} ${styles.iconIglo}`}>
-                <Mountain color="white" />
-              </div>
+              <Image
+                src="/images/iglo-icon.png"
+                alt="Iglo"
+                width={56}
+                height={56}
+                className={styles.appIcon}
+              />
               <div className={styles.cardInfo}>
                 <h2 className={styles.cardTitle}>Iglo</h2>
                 <p className={styles.cardSubtitle}>Ski group tracker</p>
@@ -208,11 +212,13 @@ export default function Home() {
               <span className={styles.familyLabel}>Petnames</span>
             </div>
             <div className={styles.familyItem}>
-              <div
-                className={`${styles.familyIcon} ${styles.familyIconIglo}`}
-              >
-                <Mountain color="white" />
-              </div>
+              <Image
+                src="/images/iglo-icon.png"
+                alt="Iglo"
+                width={96}
+                height={96}
+                className={styles.familyAppIcon}
+              />
               <span className={styles.familyLabel}>Iglo</span>
             </div>
           </div>
